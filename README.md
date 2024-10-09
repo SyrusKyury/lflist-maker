@@ -48,7 +48,7 @@ If you'd like to contribute to this project:
 This project is made possible thanks to data sourced from:
 
 - [Format Library](https://www.formatlibrary.com/)
-- [YGOProDeck](https://ygoprodeck.com/))
+- [YGOProDeck](https://ygoprodeck.com/)
 
 ## License
 
