@@ -1,11 +1,55 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    Test
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <h1>Test</h1>
-</body>
+    <header>
+        <h1 id="title">LFList Creator for EDOPro</h1>
+        <div class="language-selector">
+            <img src="images/it-flag.png" alt="Italiano" onclick="setLanguage('it')">
+            <img src="images/en-flag.png" alt="English" onclick="setLanguage('en')">
+            <img src="images/pt-br-flag.png" alt="Português (Brasil)" onclick="setLanguage('pt-BR')">
+            <img src="images/es-flag.png" alt="Español" onclick="setLanguage('es')">
+            <img src="images/fr-flag.png" alt="Français" onclick="setLanguage('fr')">
+            <img src="images/de-flag.png" alt="Deutsch" onclick="setLanguage('de')">
+        </div>
+    </header>
 
+    <div class="container" id="content">
+        <h2></h2>
+        <p></p>
+
+        <form>
+            <label for="banlist-name"></label>
+            <input type="text" id="banlist-name" name="banlist-name" placeholder="e.g., My Custom LFList" required>
+
+            <label for="banlist"></label>
+            <select id="banlist" name="banlist">
+            </select>
+
+            <label for="release-date"></label>
+            <input type="date" id="release-date" name="release-date" required>
+
+            <button type="input" onclick="validateForm(event)"></button>
+        </form>
+
+        <div class="paypal-donate">
+            <p></p>
+            <a href="https://www.paypal.com/donate/?hosted_button_id=ETV8BCE3C6LWU" target="_blank">
+                <img src="https://www.progettoamico.org/wp-content/uploads/2022/07/paypal-donate-button-high-quality-png.png" alt="Donate with PayPal">
+            </a>
+        </div>
+
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+    <script src="js/language.js"></script>
+    <script src="js/generate.js"></script>
+    <script src="js/banlist_manager.js"></script>
+</body>
 </html>
